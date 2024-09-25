@@ -21,8 +21,9 @@ import sys
 
 def word_frequency(text):
     frequencies = {} # Dictionary to store word frequencies
-
-    # Your code here
+    temp_text = text.lower()
+    words = temp_text.split()
+    frequencies = len(words)
     
     return frequencies
 
