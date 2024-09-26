@@ -23,7 +23,12 @@ def word_frequency(text):
     frequencies = {} # Dictionary to store word frequencies
     temp_text = text.lower()
     words = temp_text.split()
-    frequencies = len(words)
+    # for loop in words, go with every word in it
+    for word in words:
+        if word in frequencies:
+            frequencies[word] += 1
+        else:
+            frequencies[word] = 1
     
     return frequencies
 
